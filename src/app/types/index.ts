@@ -1,7 +1,9 @@
-export type Lang = 'both' | 'en' | 'bn';
+
+export type Lang = "both" | "en" | "bn";
 
 export interface NavItem {
   id: string;
+  href: string;
   icon: string;
   en: string;
   bn: string;
@@ -12,21 +14,16 @@ export interface NavGroup {
   items: NavItem[];
 }
 
-export interface SectionProps {
-  level: 'Basic' | 'Intermediate' | 'Advanced';
+export interface SectionData {
+  level: "Basic" | "Intermediate" | "Advanced";
   titleEn: string;
   titleBn: string;
   en: string;
   bn: string;
   code?: string;
-  lang: Lang;
 }
 
 export interface InterviewQuestion {
   q: string;
   a: string;
-}
-
-export interface PageProps {
-  lang: Lang;
 }

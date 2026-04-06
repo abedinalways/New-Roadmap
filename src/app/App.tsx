@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import T from './styles/theme';
 import { Lang } from './types';
-import { ALL_ITEMS } from './constants/navGroups';
+
 import { getPageMap } from './constants/routes';
-import Header from '@/components/layout/header';
+import { ALL_NAV_ITEMS } from './constants/navGroups';
+import { Sidebar } from '../components/layout/Sidebar';
+import { Header } from '../components/layout/header';
+
 
 
 export default function App() {
@@ -12,7 +15,7 @@ export default function App() {
   const [lang, setLang] = useState<Lang>('both');
 
   const pageMap = getPageMap(lang, setPage);
-  const curItem = ALL_ITEMS.find(i => i.id === page);
+  const curItem = ALL_NAV_ITEMS.find(i => i.id === page);
 
   return (
     <div

@@ -128,3 +128,20 @@
     @apply font-sans;
   }
 }
+
+
+
+@layer base {
+  :root {
+    --background: 215 28% 7%;        /* #0d1117 */
+    --foreground: 210 17% 90%;       /* #e6edf3 */
+    --card: 216 25% 13%;             /* #1c2128 */
+    --card-foreground: 210 17% 90%;
+    --muted: 217 19% 27%;            /* #30363d */
+    --muted-foreground: 218 11% 60%; /* #8b949e */
+    --accent: 262 83% 58%;           /* #7c3aed */
+    --accent-foreground: 210 17% 90%;
+    --border: 217 19% 27%;           /* #30363d */
+    --radius: 0.75rem;
+  }
+}
